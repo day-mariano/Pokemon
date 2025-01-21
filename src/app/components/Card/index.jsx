@@ -8,12 +8,13 @@ export default function Card(props) {
   const card = props.card;
 
   return (
-    <li onClick={()=> console.log("clicou")}>
+    <li className={styles.card} onClick={()=> console.log("clicou")}>
       <Image
+        className={styles.cardImage}
         src={card.images.small}
         alt={card.name}
-        width={280}
-        height={394.28}
+        width={245}
+        height={342}
       />
       <div className={styles.cardInfo}>
         <div className={styles.info}>
