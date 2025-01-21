@@ -70,10 +70,23 @@ a.primary {
   color: var(--background);
   gap: 8px;
 }
+.cardInfo h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2F3133;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 150px;
+}
 
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
+.cardInfo p {
+  font-size: 13px;
+  font-weight: 500;
+  color: #7A7D80;
+}
+.infoImage {
+  color: #AFAFB0;
+  height: auto;
 }
 
 .footer {
