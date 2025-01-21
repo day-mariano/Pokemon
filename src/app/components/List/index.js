@@ -20,9 +20,6 @@ export default function List() {
       .catch((err) => console.error("error:" + err));
   }, []);
 
-//   pokemons.card.all().then((cards) => {
-//     console.log(cards[0].name); // "Blastoise"
-//   });
 console.log(cards)
 
   return (

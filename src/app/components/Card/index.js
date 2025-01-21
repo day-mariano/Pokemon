@@ -9,14 +9,6 @@ export default function Card(props) {
 
   return (
     <li>
-      {/* <Image
-        src={
-          "https://prices.pokemontcg.io/cardmarket/" + card.id
-        }
-        alt={card.name}
-        width={280}
-        height={208}
-      /> */}
       <Image
         src={card.images.small}
         alt={card.name}

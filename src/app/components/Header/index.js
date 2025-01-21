@@ -9,18 +9,14 @@ export default function Header() {
         <Link
           href="/" 
           target="_self"
-        //   className={styles.a}
         >
             <Image
-            // aria-hidden
             src="/pokemonlogo.png"
             alt="File icon"
             width={158.32}
             height={64.04}
             />
         </Link>
-
-
         <nav className={styles.nav}>
           <Link
             href="https://pokemontcg.io/"

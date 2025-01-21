@@ -6,13 +6,6 @@
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
 
-  /* display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center; */
-  /* min-height: 100svh; */
-  /* padding: 80px; */
-  /* gap: 64px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,30 +132,10 @@
   color: rgb(209, 177, 36);
 }
 
-/* Enable hover only on non-touch devices */
-/* @media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-} */
-
 @media (max-width: 600px) {
   .list {
     justify-content: center;
-
   }
-
 }
 
 @media (prefers-color-scheme: dark) {
