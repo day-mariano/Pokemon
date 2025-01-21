@@ -8,7 +8,7 @@ export default function Card(props) {
   const card = props.card;
 
   return (
-    <li>
+    <li onClick={()=> console.log("clicou")}>
       <Image
         src={card.images.small}
         alt={card.name}
