@@ -19,5 +19,7 @@ Nesse projetos pude praticar a criação de componentes, useEffect, UseState, co
 [Pokémon](https://pokemon-tcg-dayana.vercel.app/)
 [Pokémon TCG API ](https://docs.pokemontcg.io/)
 
+![Preview](public/macbook1.png)
+![Preview](public/macbook2.png)
 ![Preview](public/macbook.png)
 ![Preview](public/iphone.png)
