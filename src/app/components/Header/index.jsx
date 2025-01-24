@@ -12,7 +12,7 @@ export default function Header() {
         >
             <Image
             src="/pokemonlogo.png"
-            alt="File icon"
+            alt="logo"
             width={158.32}
             height={64.04}
             />

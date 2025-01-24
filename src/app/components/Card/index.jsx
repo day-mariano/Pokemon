@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../page.module.css";
-
-
+import Modal from "../Modal";
+import { use, useState } from "react";
 
 export default function Card(props) {
   const card = props.card;
+  const [openModal, setOpenModal] = useState(false);
 
   return (
-    <li className={styles.card} onClick={()=> console.log("clicou")}>
+    <li className={styles.card} onClick={() => setOpenModal(!openModal)}>
       <Image
         className={styles.cardImage}
         src={card.images.small}
@@ -18,30 +19,21 @@ export default function Card(props) {
       />
       <div className={styles.cardInfo}>
         <div className={styles.info}>
-            <h2 > {card.name} </h2>
-            <p>Type {card.types}</p>
+          <h2> {card.name} </h2>
+          <p>Type {card.types}</p>
         </div>
         <div className={styles.info}>
-            <p>{card.rarity}</p>
-            <Image
-                src={card.set.images.symbol}
-                alt={card.name}
-                width={28}
-                height={28}
-                className={styles.infoImage}
-                  />
+          <p>{card.rarity}</p>
+          <Image
+            src={card.set.images.symbol}
+            alt={card.name}
+            width={28}
+            height={28}
+            className={styles.infoImage}
+          />
         </div>
-        {/* <Link
-          to={{
-            pathname: "/movie/" + card.id,
-          }}
-          state={card}
-          id="buttonDetails"
-        >
-          {" "}
-          Details
-        </Link> */}
       </div>
+      <Modal isOpen={openModal} setOpenModal={setOpenModal} card={card} />
     </li>
   );
 }

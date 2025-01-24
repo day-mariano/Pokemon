@@ -15,7 +15,6 @@ export default function Home() {
         <Link
           href="https://dayanamariano.dev/"
           target="_blank"
-          rel="noopener noreferrer"
           >
           Dayana Mariano
         </Link>
